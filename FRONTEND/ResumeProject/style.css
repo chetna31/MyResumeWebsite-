@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+}
+/* Body header */
+#body-header{
+    height: 65vh;
+    width: 100vw;
+    opacity: 0.8;
+    background-image: url(./images/macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    /* position: sticky;
+    top: 0; */
+}
+
+/* horizontal list */
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    padding: 0px;
+    margin: 20px 20px 5px;
+    font-size: large;
+}
+
+.horizontal-list li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+#nav-menu li a{
+    transition: color 0.5s ,boder-bottom 1s;
+}
+#nav-menu li a:hover{
+    color: lightgray;
+    border-bottom: 1px solid lightgray;
+}
+/* .horizontal-list li a:hover{
+    color: red; 
+    border-bottom: 1px solid white;
+} */
+
+.text-center{
+    text-align: center;
+}
+/* NAME AND SOCIAL ICONS */
+#name-social-container{
+    margin-top: 15vh;
+}
+#My-name{
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: aliceblue;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.social-icons {
+    position: relative;
+}
+
+/* ANIMATIONS ON SOCIAL ICONS */
+@keyframes blinking1{
+    0%{
+        background-color: black;
+        border: 1px solid #666;
+    }
+    100%{
+        background-color: gray;
+        border: 1px solid #666;
+    }    
+}
+@keyframes blinking2{
+    0%{
+        background-color: black;
+        box-shadow:  0px 0px 6px 4px #666;
+    }
+    100%{
+        background-color: black;
+        box-shadow: 0px 0px 6px 4px #666;
+    }
+}
+.social{
+    animation: blinking1 1s infinite;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+     margin: auto;
+}
+.social:hover{
+    animation: blinking2 1s infinite;
+}
+
+section{
+    margin-bottom: 10vh;
+    display: inline-block;
+}
+
+/* ABOUT-SECTIONS */
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+#My-image{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#My-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
